@@ -11,8 +11,8 @@
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>ipadicon.png</string>
-		<string>iphoneicon.png</string>
-		<string>iphoneretinaicon.png</string>
+		<string>Icon.png</string>
+		<string>Icon@2x.png</string>
 		<string>ipadretinaicon.png</string>
 		<string>Default-Portrait@2x~ipad.png</string>
 		<string>Default-Portrait~ipad.png</string>
@@ -30,8 +30,8 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>ipadicon.png</string>
-				<string>iphoneicon.png</string>
-				<string>iphoneretinaicon.png</string>
+				<string>Icon.png</string>
+				<string>Icon@2x.png</string>
 				<string>ipadretinaicon.png</string>
 				<string>Default-Portrait@2x~ipad.png</string>
 				<string>Default-Portrait~ipad.png</string>

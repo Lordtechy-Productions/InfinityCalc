@@ -58,6 +58,8 @@
 		50E9DF8E149EAC2400DD53FF /* iphoneiconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9DF8D149EAC2400DD53FF /* iphoneiconretina.png */; };
 		50E9DF91149EAEB200DD53FF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9DF8F149EAC7800DD53FF /* Default.png */; };
 		50E9DF93149EAFAD00DD53FF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9DF92149EAFAD00DD53FF /* Default@2x.png */; };
+		B378D71D17348F3100485DE2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71C17348F3100485DE2 /* Icon@2x.png */; };
+		B378D71F17348F4300485DE2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71E17348F4300485DE2 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,8 @@
 		50E9DF8D149EAC2400DD53FF /* iphoneiconretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphoneiconretina.png; sourceTree = "<group>"; };
 		50E9DF8F149EAC7800DD53FF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50E9DF92149EAFAD00DD53FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B378D71C17348F3100485DE2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		B378D71E17348F4300485DE2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 		5015EFCC14870B2A00FC491D = {
 			isa = PBXGroup;
 			children = (
+				B378D71E17348F4300485DE2 /* Icon.png */,
+				B378D71C17348F3100485DE2 /* Icon@2x.png */,
 				5028446416F9066400B9228F /* Default-568h@2x.png */,
 				50D8D8151554C842002AAF6A /* Default-Landscape@2x~ipad.png */,
 				50D8D8131554C5FE002AAF6A /* Default-Portrait@2x~ipad.png */,
@@ -393,6 +399,8 @@
 				50A7BE5C159A01FB00CA2234 /* lnBase.png in Resources */,
 				5028446316F9064D00B9228F /* Default_large@2x.png in Resources */,
 				5028446516F9066400B9228F /* Default-568h@2x.png in Resources */,
+				B378D71D17348F3100485DE2 /* Icon@2x.png in Resources */,
+				B378D71F17348F4300485DE2 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
