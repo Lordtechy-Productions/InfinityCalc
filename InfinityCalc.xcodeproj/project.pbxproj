@@ -60,6 +60,8 @@
 		50E9DF93149EAFAD00DD53FF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9DF92149EAFAD00DD53FF /* Default@2x.png */; };
 		B378D71D17348F3100485DE2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71C17348F3100485DE2 /* Icon@2x.png */; };
 		B378D71F17348F4300485DE2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71E17348F4300485DE2 /* Icon.png */; };
+		B378D7211735309C00485DE2 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D7201735309C00485DE2 /* Icon-72@2x.png */; };
+		B378D723173530A300485DE2 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D722173530A300485DE2 /* Icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -141,6 +143,8 @@
 		50E9DF92149EAFAD00DD53FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		B378D71C17348F3100485DE2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B378D71E17348F4300485DE2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B378D7201735309C00485DE2 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		B378D722173530A300485DE2 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,8 @@
 		5015EFCC14870B2A00FC491D = {
 			isa = PBXGroup;
 			children = (
+				B378D722173530A300485DE2 /* Icon-72.png */,
+				B378D7201735309C00485DE2 /* Icon-72@2x.png */,
 				B378D71E17348F4300485DE2 /* Icon.png */,
 				B378D71C17348F3100485DE2 /* Icon@2x.png */,
 				5028446416F9066400B9228F /* Default-568h@2x.png */,
@@ -401,6 +407,8 @@
 				5028446516F9066400B9228F /* Default-568h@2x.png in Resources */,
 				B378D71D17348F3100485DE2 /* Icon@2x.png in Resources */,
 				B378D71F17348F4300485DE2 /* Icon.png in Resources */,
+				B378D7211735309C00485DE2 /* Icon-72@2x.png in Resources */,
+				B378D723173530A300485DE2 /* Icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
