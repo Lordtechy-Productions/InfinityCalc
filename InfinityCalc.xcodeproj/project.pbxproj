@@ -350,6 +350,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
+				TargetAttributes = {
+					5015EFD614870B2A00FC491D = {
+						DevelopmentTeam = 6U3V4DF34U;
+					};
+				};
 			};
 			buildConfigurationList = 5015EFD114870B2A00FC491D /* Build configuration list for PBXProject "InfinityCalc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -556,8 +561,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = InfinityCalc/InfinityCalc.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Ann E Greenwald (CLE34H9S2K)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ann E Greenwald (CLE34H9S2K)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dresden School District (98U7AQU48N)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InfinityCalc/InfinityCalc-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -581,8 +586,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = InfinityCalc/InfinityCalc.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Ann E Greenwald";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Ann E Greenwald";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dresden School District (98U7AQU48N)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InfinityCalc/InfinityCalc-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
