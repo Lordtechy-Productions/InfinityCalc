@@ -58,6 +58,7 @@
 		50E9DF8E149EAC2400DD53FF /* iphoneiconretina.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9DF8D149EAC2400DD53FF /* iphoneiconretina.png */; };
 		50E9DF91149EAEB200DD53FF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9DF8F149EAC7800DD53FF /* Default.png */; };
 		50E9DF93149EAFAD00DD53FF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50E9DF92149EAFAD00DD53FF /* Default@2x.png */; };
+		B32A70B917FC4F7200FA7E31 /* GoogleAnalyticsServicesiOS_3.01 (1).zip in Resources */ = {isa = PBXBuildFile; fileRef = B32A70B817FC4F7200FA7E31 /* GoogleAnalyticsServicesiOS_3.01 (1).zip */; };
 		B34AA8E817E64E0C000BDB21 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34AA8E717E64E0C000BDB21 /* MoreViewController.m */; };
 		B378D71D17348F3100485DE2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71C17348F3100485DE2 /* Icon@2x.png */; };
 		B378D71F17348F4300485DE2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71E17348F4300485DE2 /* Icon.png */; };
@@ -65,10 +66,7 @@
 		B378D723173530A300485DE2 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D722173530A300485DE2 /* Icon-72.png */; };
 		B3C7C09817F4B1D600B76BF2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C09717F4B1D600B76BF2 /* CoreData.framework */; };
 		B3C7C09A17F4B1E300B76BF2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C09917F4B1E300B76BF2 /* SystemConfiguration.framework */; };
-		B3C7C09C17F4B1FB00B76BF2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C09B17F4B1FB00B76BF2 /* libz.dylib */; };
 		B3C7C0A217F4B39300B76BF2 /* Google Analytics Library in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C0A117F4B39300B76BF2 /* Google Analytics Library */; };
-		B3C7C0A417F4B3BE00B76BF2 /* libGoogleAnalytics_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C0A317F4B3BE00B76BF2 /* libGoogleAnalytics_debug.a */; };
-		B3C7C0A617F4B3EF00B76BF2 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C0A517F4B3EF00B76BF2 /* libGoogleAnalyticsServices.a */; };
 		B3D13C8117DD2533004B7DCC /* ExtraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D13C7F17DD2533004B7DCC /* ExtraViewController.m */; };
 		B3D13C8217DD2533004B7DCC /* ExtraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D13C8017DD2533004B7DCC /* ExtraViewController.xib */; };
 /* End PBXBuildFile section */
@@ -150,6 +148,7 @@
 		50E9DF8D149EAC2400DD53FF /* iphoneiconretina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphoneiconretina.png; sourceTree = "<group>"; };
 		50E9DF8F149EAC7800DD53FF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		50E9DF92149EAFAD00DD53FF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B32A70B817FC4F7200FA7E31 /* GoogleAnalyticsServicesiOS_3.01 (1).zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = "GoogleAnalyticsServicesiOS_3.01 (1).zip"; sourceTree = "<group>"; };
 		B34AA8E617E64E0C000BDB21 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		B34AA8E717E64E0C000BDB21 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
 		B378D71C17348F3100485DE2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -163,7 +162,6 @@
 		B3C7C09F17F4B30400B76BF2 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../../../../../Downloads/GoogleAnalyticsServicesiOS_3.01/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		B3C7C0A117F4B39300B76BF2 /* Google Analytics Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Google Analytics Library"; sourceTree = "<group>"; };
 		B3C7C0A317F4B3BE00B76BF2 /* libGoogleAnalytics_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics_debug.a; path = "Google Analytics Library/libGoogleAnalytics_debug.a"; sourceTree = "<group>"; };
-		B3C7C0A517F4B3EF00B76BF2 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = "../../../../../Downloads/GoogleAnalyticsServicesiOS_3-1.01/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; };
 		B3C7C0A717F4B4C000B76BF2 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = "../Google Analytics Library/GAI.h"; sourceTree = "<group>"; };
 		B3C7C0A817F4B4C000B76BF2 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = "../Google Analytics Library/GAIDictionaryBuilder.h"; sourceTree = "<group>"; };
 		B3C7C0A917F4B4C000B76BF2 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = "../Google Analytics Library/GAIFields.h"; sourceTree = "<group>"; };
@@ -180,9 +178,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C7C0A617F4B3EF00B76BF2 /* libGoogleAnalyticsServices.a in Frameworks */,
-				B3C7C0A417F4B3BE00B76BF2 /* libGoogleAnalytics_debug.a in Frameworks */,
-				B3C7C09C17F4B1FB00B76BF2 /* libz.dylib in Frameworks */,
 				B3C7C09A17F4B1E300B76BF2 /* SystemConfiguration.framework in Frameworks */,
 				B3C7C09817F4B1D600B76BF2 /* CoreData.framework in Frameworks */,
 				5067989314BF2E30006A2E4E /* MessageUI.framework in Frameworks */,
@@ -208,9 +203,9 @@
 		5015EFCC14870B2A00FC491D = {
 			isa = PBXGroup;
 			children = (
+				B32A70B817FC4F7200FA7E31 /* GoogleAnalyticsServicesiOS_3.01 (1).zip */,
 				B3C7C0A117F4B39300B76BF2 /* Google Analytics Library */,
 				B378D722173530A300485DE2 /* Icon-72.png */,
-				B3C7C0A517F4B3EF00B76BF2 /* libGoogleAnalyticsServices.a */,
 				B378D7201735309C00485DE2 /* Icon-72@2x.png */,
 				B378D71E17348F4300485DE2 /* Icon.png */,
 				B378D71C17348F3100485DE2 /* Icon@2x.png */,
@@ -442,6 +437,7 @@
 				50E9DF91149EAEB200DD53FF /* Default.png in Resources */,
 				50E9DF93149EAFAD00DD53FF /* Default@2x.png in Resources */,
 				5020CE7514E1D11600E884D1 /* DetailViewController.xib in Resources */,
+				B32A70B917FC4F7200FA7E31 /* GoogleAnalyticsServicesiOS_3.01 (1).zip in Resources */,
 				50A2B78C14E2293F0009A264 /* AboutViewController.xib in Resources */,
 				B3C7C0A217F4B39300B76BF2 /* Google Analytics Library in Resources */,
 				5099023414E71BE100F76B38 /* FunctionsViewController.xib in Resources */,

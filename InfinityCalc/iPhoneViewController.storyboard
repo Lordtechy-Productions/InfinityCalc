@@ -382,7 +382,7 @@
                                 </state>
                                 <connections>
                                     <action selector="info" destination="jFh-ro-WBZ" eventType="touchUpInside" id="0Pt-Dq-6hu"/>
-                                    <segue destination="ub0-6c-8Ex" kind="modal" id="RMb-TJ-9pk"/>
+                                    <segue destination="ub0-6c-8Ex" kind="modal" modalTransitionStyle="coverVertical" id="RMb-TJ-9pk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Memory:" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="sZ6-Fb-ww7">

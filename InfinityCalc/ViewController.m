@@ -206,14 +206,14 @@ int screenHeight = 0;
         if (ABS([UIScreen mainScreen].scale-2.f) <.01 && ABS([UIScreen mainScreen].bounds.size.height - 568.0f) <.01){
             NSLog(@"iPhone 5");
             NSLog(@"%g", screenHeight);
-         memoryDisplay.frame = CGRectMake(164,526,146,21);
-         Memory.frame = CGRectMake(88,526,68,21);
+         memoryDisplay.frame = CGRectMake(164,500,146,21);
+         Memory.frame = CGRectMake(88,500,68,21);
          sin.frame = CGRectMake(87,438,69,40);
          cos.frame = CGRectMake(164,438,69,40);
          tan.frame = CGRectMake(241,438,69,40);
          percent.frame = CGRectMake(10,390,69,40);
          operationView.frame = CGRectMake(10, 13, 118.5, 36);
-         degRadLabel.frame = CGRectMake(15, 526, 36, 21);
+         degRadLabel.frame = CGRectMake(15, 500, 36, 21);
          Info.frame = CGRectMake(10,438,69,40);
         }else{
             NSLog(@"iPhone 4");
@@ -237,50 +237,50 @@ int screenHeight = 0;
         if (ABS([UIScreen mainScreen].scale-2.f) <.01 && ABS([UIScreen mainScreen].bounds.size.height - 568.0f) <.01){
             NSLog(@"iPhone 5");
             NSLog(@"%g", screenHeight);
-            MClear.frame = CGRectMake(173.7,54,70,36);
-            MPlus.frame = CGRectMake(251.7,54,70,36);
-            MMinus.frame = CGRectMake(329.7,54,70,36);
-            MRecall.frame = CGRectMake(407.7,54,70,36);
-            Clear.frame = CGRectMake(173.7,96,70,36);
-            Negative.frame = CGRectMake(251.7,96,70,36);
-            Divide.frame = CGRectMake(329.7,96,70,36);
-            Multiply.frame = CGRectMake(407.7,96,70,36);
-            Seven.frame = CGRectMake(173.7,138,70,36);
-            Eight.frame = CGRectMake(251.7,138,70,36);
-            Nine.frame = CGRectMake(329.7,138,70,36);
-            Subtract.frame = CGRectMake(407.7,138,70,36);
-            Four.frame = CGRectMake(173.7,180,70,36);
-            Five.frame = CGRectMake(251.7,180,70,36);
-            Six.frame = CGRectMake(329.7,180,70,36);
-            Add.frame = CGRectMake(407.7,180,70,36);
-            One.frame = CGRectMake(173.7,222,70,36);
-            Two.frame = CGRectMake(251.7,222,70,36);
-            Three.frame = CGRectMake(329.7,222,70,36);
-            Equals.frame = CGRectMake(407.7,222,70,78);
-            Zero.frame = CGRectMake(173.7,264,70,36);
-            answer.frame = CGRectMake(329.7,264,70,36);
-            thePoint.frame = CGRectMake(251.7,264,70,36);
+            MClear.frame = CGRectMake(207.033333337,54,70,36);
+            MPlus.frame = CGRectMake(301.700000004,54,70,36);
+            MMinus.frame = CGRectMake(396.3666667,54,70,36);
+            MRecall.frame = CGRectMake(491.033333367,54,70,36);
+            Clear.frame = CGRectMake(207.033333337,96,70,36);
+            Negative.frame = CGRectMake(301.700000004,96,70,36);
+            Divide.frame = CGRectMake(396.3666667,96,70,36);
+            Multiply.frame = CGRectMake(491.033333367,96,70,36);
+            Seven.frame = CGRectMake(207.033333337,138,70,36);
+            Eight.frame = CGRectMake(301.700000004,138,70,36);
+            Nine.frame = CGRectMake(396.3666667,138,70,36);
+            Subtract.frame = CGRectMake(491.033333367,138,70,36);
+            Four.frame = CGRectMake(207.033333337,180,70,36);
+            Five.frame = CGRectMake(301.700000004,180,70,36);
+            Six.frame = CGRectMake(396.3666667,180,70,36);
+            Add.frame = CGRectMake(491.033333367,180,70,36);
+            One.frame = CGRectMake(207.033333337,222,70,36);
+            Two.frame = CGRectMake(301.700000004,222,70,36);
+            Three.frame = CGRectMake(396.3666667,222,70,36);
+            Equals.frame = CGRectMake(491.033333367,222,70,78);
+            Zero.frame = CGRectMake(207.033333337,264,70,36);
+            answer.frame = CGRectMake(396.3666667,264,70,36);
+            thePoint.frame = CGRectMake(301.700000004,264,70,36);
             
             Squared.frame = CGRectMake(17.7,138,70,36);
-            Cubed.frame = CGRectMake(95.7,138,70,36);
-            SquareRoot.frame = CGRectMake(95.7,180,70,36);
-            Backspace.frame = CGRectMake(95.7,264,70,36);
+            Cubed.frame = CGRectMake(112.366666667,138,70,36);
+            SquareRoot.frame = CGRectMake(112.366666667,180,70,36);
+            Backspace.frame = CGRectMake(112.366666667,264,70,36);
             Info.frame = CGRectMake(17.7,264,70,36);
             Power.frame = CGRectMake(17.7,180,70,36);
             Inverse.frame = CGRectMake(17.7,222,70,36);
-            Pi.frame = CGRectMake(95.7,222,70,36);
+            Pi.frame = CGRectMake(112.366666667,222,70,36);
             
             Memory.frame = CGRectMake(17.7, 10, 104, 33);
-            memoryDisplay.frame = CGRectMake(17.7, 30, 75, 21);
-            display.frame = CGRectMake(236, 25, 234, 36);
+            memoryDisplay.frame = CGRectMake(95.7, 17, 75, 21);
+            display.frame = CGRectMake(301.700000004, 25, 234, 36);
             
-            sin.frame = CGRectMake(95.7,54,70,36);
+            sin.frame = CGRectMake(112.366666667,54,70,36);
             tan.frame = CGRectMake(17.7,96,70,36);
-            cos.frame = CGRectMake(95.7,96,70,36);
+            cos.frame = CGRectMake(112.366666667,96,70,36);
             
             percent.frame = CGRectMake(17.7,54,70,36);
             operationView.frame = CGRectMake(123, 15, 113, 36);
-            degRadLabel.frame = CGRectMake(95.7, 30, 36, 21);
+            degRadLabel.frame = CGRectMake(17.7, 35, 36, 21);
             iPhone5TextView.frame = CGRectMake(480, 10, 88, 300);
         }else{
             NSLog(@"iPhone 4");
@@ -1021,12 +1021,17 @@ int screenHeight = 0;
             Memory.textColor = [UIColor blackColor];
             display.backgroundColor = [UIColor whiteColor];
             operationView.backgroundColor = [UIColor whiteColor];
+            degRadLabel.textColor = [UIColor blackColor];
+            degRadLabel.backgroundColor = [UIColor whiteColor];
         }else if ([theTempString isEqual:@"Black"]){
             self.view.backgroundColor = [UIColor blackColor];
             memoryDisplay.textColor = [UIColor whiteColor];
             Memory.textColor = [UIColor whiteColor];
-            display.backgroundColor = [UIColor whiteColor];
-            operationView.backgroundColor = [UIColor whiteColor];
+            display.textColor = [UIColor whiteColor];
+            operationView.backgroundColor = [UIColor blackColor];
+            operationView.textColor = [UIColor whiteColor];
+            degRadLabel.textColor = [UIColor whiteColor];
+            degRadLabel.backgroundColor = [UIColor blackColor];
         }else if ([theTempString isEqual:@"Red"]){
             self.view.backgroundColor = [UIColor redColor];
             memoryDisplay.textColor = [UIColor whiteColor];
@@ -1069,12 +1074,18 @@ int screenHeight = 0;
             Memory.textColor = [UIColor blackColor];
             display.backgroundColor = [UIColor whiteColor];
             operationView.backgroundColor = [UIColor whiteColor];
+            degRadLabel.textColor = [UIColor blackColor];
+            degRadLabel.backgroundColor = [UIColor whiteColor];
         }else if ([theTempString isEqual:@"Black"]){
             self.view.backgroundColor = [UIColor blackColor];
             memoryDisplay.textColor = [UIColor whiteColor];
             Memory.textColor = [UIColor whiteColor];
-            display.backgroundColor = [UIColor whiteColor];
-            operationView.backgroundColor = [UIColor whiteColor];
+            display.backgroundColor = [UIColor blackColor];
+            display.textColor = [UIColor whiteColor];
+            operationView.backgroundColor = [UIColor blackColor];
+            operationView.textColor = [UIColor whiteColor];
+            degRadLabel.textColor = [UIColor whiteColor];
+            degRadLabel.backgroundColor = [UIColor blackColor];
         }else if ([theTempString isEqual:@"Red"]){
             self.view.backgroundColor = [UIColor redColor];
             memoryDisplay.textColor = [UIColor whiteColor];
@@ -1111,17 +1122,19 @@ int screenHeight = 0;
         if ([theTempString isEqual:@"White"]) {
             self.view.backgroundColor = [UIColor whiteColor];
             memoryDisplay.textColor = [UIColor blackColor];
-            Memory.textColor = [UIColor blackColor];
             display.backgroundColor = [UIColor whiteColor];
             operationView.backgroundColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor blackColor];
+            degRadLabel.backgroundColor = [UIColor whiteColor];
         }else if ([theTempString isEqual:@"Black"]){
             self.view.backgroundColor = [UIColor blackColor];
             memoryDisplay.textColor = [UIColor whiteColor];
             Memory.textColor = [UIColor whiteColor];
-            display.backgroundColor = [UIColor whiteColor];
-            operationView.backgroundColor = [UIColor whiteColor];
+            display.textColor = [UIColor whiteColor];
+            operationView.backgroundColor = [UIColor blackColor];
+            operationView.textColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor whiteColor];
+            degRadLabel.backgroundColor = [UIColor blackColor];
 
         }else if ([theTempString isEqual:@"Red"]){
             self.view.backgroundColor = [UIColor redColor];

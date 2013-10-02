@@ -1,0 +1,308 @@
+10
+
+dir
+0
+svn://svn.simbex.com/Greenwald/IOS/InfinityCalc/InfinityCalc
+svn://svn.simbex.com
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+81e5f6db-d50a-114e-84c5-58eecdf24318
+
+main.m
+file
+
+
+
+add
+
+InfinityCalc-Prefix.pch
+file
+
+
+
+add
+
+FunctionsDetailViewController.h
+file
+
+
+
+add
+
+iPadMainInterface.xib
+file
+
+
+
+add
+
+FunctionsDetailViewController.m
+file
+
+
+
+add
+
+InfinityCalc.entitlements
+file
+
+
+
+add
+
+FunctionsViewController.xib
+file
+
+
+
+add
+
+AboutViewController.xib
+file
+
+
+
+add
+
+FunctionsViewController.h
+file
+
+
+
+add
+
+AboutViewController.h
+file
+
+
+
+add
+
+MoreTableViewController.h
+file
+
+
+
+add
+
+FunctionsViewController.m
+file
+
+
+
+add
+
+LogBaseChange.xib
+file
+
+
+
+add
+
+AboutViewController.m
+file
+
+
+
+add
+
+MoreTableViewController.m
+file
+
+
+
+add
+
+LogBaseChange.h
+file
+
+
+
+add
+
+iPhoneViewController.storyboard
+file
+
+
+
+add
+
+LogBaseChange.m
+file
+
+
+
+add
+
+SettingsViewController.xib
+file
+
+
+
+add
+
+DetailViewController.xib
+file
+
+
+
+add
+
+SettingsViewController.h
+file
+
+
+
+add
+
+DetailViewController.h
+file
+
+
+
+add
+
+en.lproj
+dir
+
+
+
+add
+
+MoreViewController.h
+file
+
+
+
+add
+
+iPhoneSettingsViewController.h
+file
+
+
+
+add
+
+SettingsViewController.m
+file
+
+
+
+add
+
+DetailViewController.m
+file
+
+
+
+add
+
+MoreViewController.m
+file
+
+
+
+add
+
+iPhoneSettingsViewController.m
+file
+
+
+
+add
+
+InfinityCalc-Info.plist
+file
+
+
+
+add
+
+AppDelegate.h
+file
+
+
+
+add
+
+ExtraViewController.xib
+file
+
+
+
+add
+
+ViewController.h
+file
+
+
+
+add
+
+AppDelegate.m
+file
+
+
+
+add
+
+iPhoneViewController.h
+file
+
+
+
+add
+
+ExtraViewController.h
+file
+
+
+
+add
+
+ViewController.m
+file
+
+
+
+add
+
+FunctionsDetailViewController.xib
+file
+
+
+
+add
+
+iPhoneViewController.m
+file
+
+
+
+add
+
+ExtraViewController.m
+file
+
+
+
+add
+

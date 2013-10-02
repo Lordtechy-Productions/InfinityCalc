@@ -5,11 +5,13 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>B59AFED6-7E16-4F2D-8564-B55AF6023EDA</string>
+	<string>D20629D8-47B0-460B-BF6E-107F3D10879D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>InfinityCalc</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>6E541C42-AD18-44AD-A9B9-DBB8A849A1F8</key>
+		<string>https://github.com/Lordtechy-Productions/InfinityCalc.git</string>
 		<key>86B0D9A7-F1DE-4C12-8140-ECAF83BCB678</key>
 		<string>svn://svn.simbex.com/Greenwald</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>IOS/InfinityCalc/InfinityCalc.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>6E541C42-AD18-44AD-A9B9-DBB8A849A1F8</key>
+		<string>../..</string>
 		<key>86B0D9A7-F1DE-4C12-8140-ECAF83BCB678</key>
 		<string>../../../..</string>
 	</dict>
@@ -26,13 +30,21 @@
 		<string>svn://svn.simbex.com</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>svn://svn.simbex.com/Greenwald/IOS/InfinityCalc/InfinityCalc.xcodeproj</string>
+	<string>https://github.com/Lordtechy-Productions/InfinityCalc.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
 	<string>86B0D9A7-F1DE-4C12-8140-ECAF83BCB678</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6E541C42-AD18-44AD-A9B9-DBB8A849A1F8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InfinityCalc</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.subversion</string>
