@@ -2,37 +2,44 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0CE8905E-00FE-4382-A97E-5432DE71C3CB</string>
+	<string>B59AFED6-7E16-4F2D-8564-B55AF6023EDA</string>
 	<key>IDESourceControlProjectName</key>
 	<string>InfinityCalc</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>93288E12-7351-4B81-82EC-2B8A52BFB604</key>
-		<string>https://github.com/Lordtechy-Productions/InfinityCalc.git</string>
+		<key>86B0D9A7-F1DE-4C12-8140-ECAF83BCB678</key>
+		<string>svn://svn.simbex.com/Greenwald</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>InfinityCalc.xcodeproj/project.xcworkspace</string>
+	<string>IOS/InfinityCalc/InfinityCalc.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>93288E12-7351-4B81-82EC-2B8A52BFB604</key>
-		<string>../..</string>
+		<key>86B0D9A7-F1DE-4C12-8140-ECAF83BCB678</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>86B0D9A7-F1DE-4C12-8140-ECAF83BCB678</key>
+		<string>svn://svn.simbex.com</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Lordtechy-Productions/InfinityCalc.git</string>
+	<string>svn://svn.simbex.com/Greenwald/IOS/InfinityCalc/InfinityCalc.xcodeproj</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>93288E12-7351-4B81-82EC-2B8A52BFB604</string>
+	<string>86B0D9A7-F1DE-4C12-8140-ECAF83BCB678</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
+			<string>public.vcs.subversion</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>93288E12-7351-4B81-82EC-2B8A52BFB604</string>
+			<string>86B0D9A7-F1DE-4C12-8140-ECAF83BCB678</string>
 			<key>IDESourceControlWCCName</key>
-			<string>InfinityCalc</string>
+			<string>svn</string>
 		</dict>
 	</array>
 </dict>

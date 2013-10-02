@@ -11,8 +11,8 @@
 #import "SettingsViewController.h"
 #import "MoreTableViewController.h"
 #import "QuartzCore/QuartzCore.h"
-
-
+#import "MoreViewController.h"
+#import "GAITrackedViewController.h"
 
 
 
@@ -23,7 +23,7 @@ BOOL functionMoreThanOnce;
 
 @class DetailViewController;
 
-@interface ViewController : UIViewController
+@interface ViewController : GAITrackedViewController
 <UIPopoverControllerDelegate>{
     
     int *equalsLast;

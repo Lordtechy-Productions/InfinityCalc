@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "GAI.h"
+
 
 @implementation AppDelegate
 
@@ -16,14 +18,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Optional: automatically send uncaught exceptions to Google Analytics.
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    // Initialize tracker.
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-37994981-1"];
+    
     
     [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
     
-    [self.window makeKeyAndVisible];
+    [self.window makeKeyAndVisible]; 
     
     //[TestFlight takeOff:@"98e9f28262c986e290a0e4b78a55bec7_OTQ0NjAyMDEyLTA1LTI4IDIxOjU0OjQ1LjE2NTgzNA"];
     
     return YES;
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

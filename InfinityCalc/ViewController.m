@@ -13,6 +13,9 @@
 
 @synthesize MPlus,MMinus, MClear, MRecall, Clear, Negative, Multiply, Subtract, Add, Equals, Seven, Eight, Nine, Four, Five, Six, One, Two, Three, Zero, thePoint, Squared, Cubed, SquareRoot, Backspace, Info, Power, Inverse, Pi, Divide, memoryDisplay, Memory, display, sin, cos, tan, popover, percent, operationView, iPadView, iPhoneView, answer, degRadLabel, iPhone5TextView;
 
+
+
+
 - (CalcEngine *)engine{
     
     if (!engine) engine = [[CalcEngine alloc]init];
@@ -47,6 +50,8 @@ deviceOrientation = [[object object] orientation ];
 
     
 }
+
+
 
 -(IBAction)runiPadAutorotation:(id)sender{
 
@@ -156,107 +161,182 @@ deviceOrientation = [[object object] orientation ];
     
 
 }
+int screenHeight = 0;
 -(IBAction)runiPhoneAutorotation:(id)sender{
     if (deviceOrientation == UIDeviceOrientationPortrait || deviceOrientation == UIDeviceOrientationPortraitUpsideDown) {
         if (secondSwitch) {
             [self second:percent];
         }
-        MPlus.frame = CGRectMake(87,44,69,40);
-        MMinus.frame = CGRectMake(164,44,69,40);
-        MClear.frame = CGRectMake(10,44,69,40);
-        MRecall.frame = CGRectMake(241,44,69,40);
-        Clear.frame = CGRectMake(10,92,69,40);
-        Negative.frame = CGRectMake(87,92,69,40);
-        Divide.frame = CGRectMake(164,92,69,40);
-        Multiply.frame = CGRectMake(241,92,69,40);
-        Subtract.frame = CGRectMake(241,140,69,40);
-        Add.frame = CGRectMake(241,188,69,40);
-        Seven.frame = CGRectMake(10,140,69,40);
-        Eight.frame = CGRectMake(87,140,69,40);
-        Nine.frame = CGRectMake(164,140,69,40);
-        Four.frame = CGRectMake(10,188,69,40);
-        Five.frame = CGRectMake(87,188,69,40);
-        Six.frame = CGRectMake(164,188,69,40);
-        One.frame = CGRectMake(10,236,69,40);
-        Two.frame = CGRectMake(87,236,69,40);
-        Three.frame = CGRectMake(164,236,69,40);
-        Zero.frame = CGRectMake(10,284,69,40);
-        thePoint.frame = CGRectMake(87,284,69,40);
-        answer.frame = CGRectMake(164,284,69,40);
-        Equals.frame = CGRectMake(241,236,69,88);
+        MPlus.frame = CGRectMake(87,54,69,40);
+        MMinus.frame = CGRectMake(164,54,69,40);
+        MClear.frame = CGRectMake(10,54,69,40);
+        MRecall.frame = CGRectMake(241,54,69,40);
+        Clear.frame = CGRectMake(10,102,69,40);
+        Negative.frame = CGRectMake(87,102,69,40);
+        Divide.frame = CGRectMake(164,102,69,40);
+        Multiply.frame = CGRectMake(241,102,69,40);
+        Subtract.frame = CGRectMake(241,150,69,40);
+        Add.frame = CGRectMake(241,198,69,40);
+        Seven.frame = CGRectMake(10,150,69,40);
+        Eight.frame = CGRectMake(87,150,69,40);
+        Nine.frame = CGRectMake(164,150,69,40);
+        Four.frame = CGRectMake(10,198,69,40);
+        Five.frame = CGRectMake(87,198,69,40);
+        Six.frame = CGRectMake(164,198,69,40);
+        One.frame = CGRectMake(10,246,69,40);
+        Two.frame = CGRectMake(87,246,69,40);
+        Three.frame = CGRectMake(164,246,69,40);
+        Zero.frame = CGRectMake(10,294,69,40);
+        thePoint.frame = CGRectMake(87,294,69,40);
+        answer.frame = CGRectMake(164,294,69,40);
+        Equals.frame = CGRectMake(241,246,69,88);
         
-        Squared.frame = CGRectMake(10,332,69,40);
-        Cubed.frame = CGRectMake(87,332,69,40);
-        SquareRoot.frame = CGRectMake(164,332,69,40);
-        Backspace.frame = CGRectMake(241,332,69,40);
-        Info.frame = CGRectMake(10,380,69,40);
-        Power.frame = CGRectMake(87,380,69,40);
-        Inverse.frame = CGRectMake(164,380,69,40);
-        Pi.frame = CGRectMake(241,380,69,40);
-        Memory.frame = CGRectMake(88,428,68,21);
-        memoryDisplay.frame = CGRectMake(164,428,146,21);
-        display.frame = CGRectMake(126.5,3,183.5,36);
+        Squared.frame = CGRectMake(10,342,69,40);
+        Cubed.frame = CGRectMake(87,342,69,40);
+        SquareRoot.frame = CGRectMake(164,342,69,40);
+        Backspace.frame = CGRectMake(241,342,69,40);
         
-        sin.frame = CGRectMake(379,44,69,40);
-        cos.frame = CGRectMake(379,44,69,40);
-        tan.frame = CGRectMake(379,44,69,40);
-        percent.frame = CGRectMake(379,44,69,40);
-        operationView.frame = CGRectMake(10, 3, 118.5, 36);
-        degRadLabel.frame = CGRectMake(15, 428, 36, 21);
-        iPhone5TextView.frame = CGRectMake(0, 464, 320, 84);
+        Power.frame = CGRectMake(87,390,69,40);
+        Inverse.frame = CGRectMake(164,390,69,40);
+        Pi.frame = CGRectMake(241,390,69,40);
+        
+       
+        display.frame = CGRectMake(126.5,13,183.5,36);
+       
+        if (ABS([UIScreen mainScreen].scale-2.f) <.01 && ABS([UIScreen mainScreen].bounds.size.height - 568.0f) <.01){
+            NSLog(@"iPhone 5");
+            NSLog(@"%g", screenHeight);
+         memoryDisplay.frame = CGRectMake(164,526,146,21);
+         Memory.frame = CGRectMake(88,526,68,21);
+         sin.frame = CGRectMake(87,438,69,40);
+         cos.frame = CGRectMake(164,438,69,40);
+         tan.frame = CGRectMake(241,438,69,40);
+         percent.frame = CGRectMake(10,390,69,40);
+         operationView.frame = CGRectMake(10, 13, 118.5, 36);
+         degRadLabel.frame = CGRectMake(15, 526, 36, 21);
+         Info.frame = CGRectMake(10,438,69,40);
+        }else{
+            NSLog(@"iPhone 4");
+            memoryDisplay.frame = CGRectMake(164,438,146,21);
+            Memory.frame = CGRectMake(88,438,68,21);
+            degRadLabel.frame = CGRectMake(15, 438, 36, 21);
+            Info.frame = CGRectMake(10,390,69,40);
+        }
+             
+        
+        
+        
+        
+        //iPhone5TextView.frame = CGRectMake(0, 474, 320, 84);
         
         
         
     }else if(deviceOrientation == UIDeviceOrientationLandscapeLeft || deviceOrientation == UIDeviceOrientationLandscapeRight){
-        MClear.frame = CGRectMake(166,44,70,36);
-        MPlus.frame = CGRectMake(244,44,70,36);
-        MMinus.frame = CGRectMake(322,44,70,36);
-        MRecall.frame = CGRectMake(400,44,70,36);
-        Clear.frame = CGRectMake(166,86,70,36);
-        Negative.frame = CGRectMake(244,86,70,36);
-        Divide.frame = CGRectMake(322,86,70,36);
-        Multiply.frame = CGRectMake(400,86,70,36);
-        Seven.frame = CGRectMake(166,128,70,36);
-        Eight.frame = CGRectMake(244,128,70,36);
-        Nine.frame = CGRectMake(322,128,70,36);
-        Subtract.frame = CGRectMake(400,128,70,36);
-        Four.frame = CGRectMake(166,170,70,36);
-        Five.frame = CGRectMake(244,170,70,36);
-        Six.frame = CGRectMake(322,170,70,36);
-        Add.frame = CGRectMake(400,170,70,36);
-        One.frame = CGRectMake(166,212,70,36);
-        Two.frame = CGRectMake(244,212,70,36);
-        Three.frame = CGRectMake(322,212,70,36);
-        Equals.frame = CGRectMake(400,212,70,78);
-        Zero.frame = CGRectMake(166,254,70,36);
-        answer.frame = CGRectMake(322,254,70,36);
-        thePoint.frame = CGRectMake(244,254,70,36);
         
-        Squared.frame = CGRectMake(10,128,70,36);
-        Cubed.frame = CGRectMake(88,128,70,36);
-        SquareRoot.frame = CGRectMake(88,170,70,36);
-        Backspace.frame = CGRectMake(88,254,70,36);
-        Info.frame = CGRectMake(10,254,70,36);
-        Power.frame = CGRectMake(10,170,70,36);
-        Inverse.frame = CGRectMake(10,212,70,36);
-        Pi.frame = CGRectMake(88,212,70,36);
         
-        Memory.frame = CGRectMake(10, -5, 104, 33);
-        memoryDisplay.frame = CGRectMake(10, 20, 75, 21);
-        display.frame = CGRectMake(236, 5, 234, 36);
+        if (ABS([UIScreen mainScreen].scale-2.f) <.01 && ABS([UIScreen mainScreen].bounds.size.height - 568.0f) <.01){
+            NSLog(@"iPhone 5");
+            NSLog(@"%g", screenHeight);
+            MClear.frame = CGRectMake(173.7,54,70,36);
+            MPlus.frame = CGRectMake(251.7,54,70,36);
+            MMinus.frame = CGRectMake(329.7,54,70,36);
+            MRecall.frame = CGRectMake(407.7,54,70,36);
+            Clear.frame = CGRectMake(173.7,96,70,36);
+            Negative.frame = CGRectMake(251.7,96,70,36);
+            Divide.frame = CGRectMake(329.7,96,70,36);
+            Multiply.frame = CGRectMake(407.7,96,70,36);
+            Seven.frame = CGRectMake(173.7,138,70,36);
+            Eight.frame = CGRectMake(251.7,138,70,36);
+            Nine.frame = CGRectMake(329.7,138,70,36);
+            Subtract.frame = CGRectMake(407.7,138,70,36);
+            Four.frame = CGRectMake(173.7,180,70,36);
+            Five.frame = CGRectMake(251.7,180,70,36);
+            Six.frame = CGRectMake(329.7,180,70,36);
+            Add.frame = CGRectMake(407.7,180,70,36);
+            One.frame = CGRectMake(173.7,222,70,36);
+            Two.frame = CGRectMake(251.7,222,70,36);
+            Three.frame = CGRectMake(329.7,222,70,36);
+            Equals.frame = CGRectMake(407.7,222,70,78);
+            Zero.frame = CGRectMake(173.7,264,70,36);
+            answer.frame = CGRectMake(329.7,264,70,36);
+            thePoint.frame = CGRectMake(251.7,264,70,36);
+            
+            Squared.frame = CGRectMake(17.7,138,70,36);
+            Cubed.frame = CGRectMake(95.7,138,70,36);
+            SquareRoot.frame = CGRectMake(95.7,180,70,36);
+            Backspace.frame = CGRectMake(95.7,264,70,36);
+            Info.frame = CGRectMake(17.7,264,70,36);
+            Power.frame = CGRectMake(17.7,180,70,36);
+            Inverse.frame = CGRectMake(17.7,222,70,36);
+            Pi.frame = CGRectMake(95.7,222,70,36);
+            
+            Memory.frame = CGRectMake(17.7, 10, 104, 33);
+            memoryDisplay.frame = CGRectMake(17.7, 30, 75, 21);
+            display.frame = CGRectMake(236, 25, 234, 36);
+            
+            sin.frame = CGRectMake(95.7,54,70,36);
+            tan.frame = CGRectMake(17.7,96,70,36);
+            cos.frame = CGRectMake(95.7,96,70,36);
+            
+            percent.frame = CGRectMake(17.7,54,70,36);
+            operationView.frame = CGRectMake(123, 15, 113, 36);
+            degRadLabel.frame = CGRectMake(95.7, 30, 36, 21);
+            iPhone5TextView.frame = CGRectMake(480, 10, 88, 300);
+        }else{
+            NSLog(@"iPhone 4");
+            MClear.frame = CGRectMake(166,54,70,36);
+            MPlus.frame = CGRectMake(244,54,70,36);
+            MMinus.frame = CGRectMake(322,54,70,36);
+            MRecall.frame = CGRectMake(400,54,70,36);
+            Clear.frame = CGRectMake(166,96,70,36);
+            Negative.frame = CGRectMake(244,96,70,36);
+            Divide.frame = CGRectMake(322,96,70,36);
+            Multiply.frame = CGRectMake(400,96,70,36);
+            Seven.frame = CGRectMake(166,138,70,36);
+            Eight.frame = CGRectMake(244,138,70,36);
+            Nine.frame = CGRectMake(322,138,70,36);
+            Subtract.frame = CGRectMake(400,138,70,36);
+            Four.frame = CGRectMake(166,180,70,36);
+            Five.frame = CGRectMake(244,180,70,36);
+            Six.frame = CGRectMake(322,180,70,36);
+            Add.frame = CGRectMake(400,180,70,36);
+            One.frame = CGRectMake(166,222,70,36);
+            Two.frame = CGRectMake(244,222,70,36);
+            Three.frame = CGRectMake(322,222,70,36);
+            Equals.frame = CGRectMake(400,222,70,78);
+            Zero.frame = CGRectMake(166,264,70,36);
+            answer.frame = CGRectMake(322,264,70,36);
+            thePoint.frame = CGRectMake(244,264,70,36);
+            
+            Squared.frame = CGRectMake(10,138,70,36);
+            Cubed.frame = CGRectMake(88,138,70,36);
+            SquareRoot.frame = CGRectMake(88,180,70,36);
+            Backspace.frame = CGRectMake(88,264,70,36);
+            Info.frame = CGRectMake(10,264,70,36);
+            Power.frame = CGRectMake(10,180,70,36);
+            Inverse.frame = CGRectMake(10,222,70,36);
+            Pi.frame = CGRectMake(88,222,70,36);
+            
+            Memory.frame = CGRectMake(10, 10, 104, 33);
+            memoryDisplay.frame = CGRectMake(10, 30, 75, 21);
+            display.frame = CGRectMake(236, 25, 234, 36);
+            
+            sin.frame = CGRectMake(88,54,70,36);
+            tan.frame = CGRectMake(10,96,70,36);
+            cos.frame = CGRectMake(88,96,70,36);
+            
+            percent.frame = CGRectMake(10,54,70,36);
+            operationView.frame = CGRectMake(123, 15, 113, 36);
+            degRadLabel.frame = CGRectMake(88, 30, 36, 21);
+            iPhone5TextView.frame = CGRectMake(480, 10, 88, 300);
+        }
+
         
-        sin.frame = CGRectMake(88,44,70,36);
-        tan.frame = CGRectMake(10,86,70,36);
-        cos.frame = CGRectMake(88,86,70,36);
-        
-        percent.frame = CGRectMake(10,44,70,36);
-        operationView.frame = CGRectMake(123, 5, 113, 36);
-        degRadLabel.frame = CGRectMake(88, 20, 36, 21);
-        iPhone5TextView.frame = CGRectMake(480, 0, 88, 300);
         
     }
 
 }
+
 
 
 -(IBAction)negative:(UIButton *)Negative{
@@ -504,15 +584,16 @@ deviceOrientation = [[object object] orientation ];
 -(IBAction)info{
     
      AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
-        
-    MoreTableViewController *theTableView = [[MoreTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
+    MoreViewController *more = [[MoreViewController alloc]init];
+    [self presentViewController:more animated:YES completion:nil];
+    /*MoreTableViewController *theTableView = [[MoreTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
     
     delegate.theNavigationController = [[UINavigationController alloc]initWithRootViewController:theTableView];
     [delegate.theNavigationController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
     [delegate.theNavigationController setModalPresentationStyle:UIModalPresentationFullScreen];
     
     [self presentModalViewController:delegate.theNavigationController animated:YES];    
-    
+    */
 
     
 }
@@ -840,8 +921,7 @@ deviceOrientation = [[object object] orientation ];
 
 - (void)viewDidLoad
 {
-    
-    if (theAnswer == @"") {
+        if (theAnswer == @"") {
         theAnswer = @"0";
     }
     
@@ -1151,5 +1231,6 @@ deviceOrientation = [[object object] orientation ];
     [super loadView];
     // Implement loadView to create a view hierarchy programmatically, without using a nib.
 }
+
 
 @end
