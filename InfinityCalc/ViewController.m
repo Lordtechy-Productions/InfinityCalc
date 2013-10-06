@@ -97,7 +97,7 @@ deviceOrientation = [[object object] orientation ];
         Pi.frame = CGRectMake(572, 841, 176, 97);
         Memory.frame = CGRectMake(309, 946, 104, 33);
         memoryDisplay.frame = CGRectMake(388, 948, 360, 32);
-        display.frame = CGRectMake(196, 0, 552, 98);
+        display.frame = CGRectMake(196, 10, 552, 98);
         
         sin.frame = CGRectMake(-400, 269, 176, 97);
         cos.frame = CGRectMake(-400, 269, 176, 97);
@@ -145,7 +145,7 @@ deviceOrientation = [[object object] orientation ];
         
         Memory.frame = CGRectMake(20, 20 , 104, 33);
         memoryDisplay.frame = CGRectMake(20, 49, 360, 32);
-        display.frame = CGRectMake(343, 0, 661, 98);
+        display.frame = CGRectMake(343, 10, 661, 98);
         operationView.frame = CGRectMake(185, 0, 158, 98);
         
         sin.frame = CGRectMake(185.333333333333,106,157.333333333333,96);
@@ -201,7 +201,7 @@ int screenHeight = 0;
         Pi.frame = CGRectMake(241,390,69,40);
         
        
-        display.frame = CGRectMake(126.5,13,183.5,36);
+        display.frame = CGRectMake(126.5,18,183.5,36);
        
         if (ABS([UIScreen mainScreen].scale-2.f) <.01 && ABS([UIScreen mainScreen].bounds.size.height - 568.0f) <.01){
             NSLog(@"iPhone 5");
@@ -1028,6 +1028,7 @@ int screenHeight = 0;
             memoryDisplay.textColor = [UIColor whiteColor];
             Memory.textColor = [UIColor whiteColor];
             display.textColor = [UIColor whiteColor];
+            display.backgroundColor = [UIColor blackColor];
             operationView.backgroundColor = [UIColor blackColor];
             operationView.textColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor whiteColor];
@@ -1073,6 +1074,7 @@ int screenHeight = 0;
             memoryDisplay.textColor = [UIColor blackColor];
             Memory.textColor = [UIColor blackColor];
             display.backgroundColor = [UIColor whiteColor];
+            display.textColor = [UIColor blackColor];
             operationView.backgroundColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor blackColor];
             degRadLabel.backgroundColor = [UIColor whiteColor];
