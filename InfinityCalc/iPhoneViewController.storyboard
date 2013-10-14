@@ -666,7 +666,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="photo copy.PNG" id="mh8-7I-dWb">
-                                <rect key="frame" x="71" y="308" width="179" height="159"/>
+                                <rect key="frame" x="197" y="221" width="110" height="98"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -678,6 +678,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="degRad" destination="RSj-cv-GtQ" id="Wkc-gZ-6Dx"/>
+                        <outlet property="theLabel" destination="m8y-Ku-3cM" id="MVu-hx-mGH"/>
                         <outlet property="theStepper" destination="0rT-dH-JlK" id="U1u-QT-QrK"/>
                     </connections>
                 </viewController>
