@@ -68,6 +68,12 @@
 		B3C7C09817F4B1D600B76BF2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C09717F4B1D600B76BF2 /* CoreData.framework */; };
 		B3C7C09A17F4B1E300B76BF2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C09917F4B1E300B76BF2 /* SystemConfiguration.framework */; };
 		B3C7C0A217F4B39300B76BF2 /* Google Analytics Library in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C0A117F4B39300B76BF2 /* Google Analytics Library */; };
+		B3CB6C431802D0FC002520C8 /* libGoogleAnalytics_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C0A317F4B3BE00B76BF2 /* libGoogleAnalytics_debug.a */; };
+		B3CB6C451802D12F002520C8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C09B17F4B1FB00B76BF2 /* libz.dylib */; };
+		B3CB6C491802D130002520C8 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CB6C461802D130002520C8 /* libz.1.1.3.dylib */; };
+		B3CB6C4A1802D130002520C8 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CB6C471802D130002520C8 /* libz.1.2.5.dylib */; };
+		B3CB6C4B1802D130002520C8 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CB6C481802D130002520C8 /* libz.1.dylib */; };
+		B3CB6C4D1802D19C002520C8 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3CB6C4C1802D19C002520C8 /* libGoogleAnalyticsServices.a */; };
 		B3D13C8117DD2533004B7DCC /* ExtraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D13C7F17DD2533004B7DCC /* ExtraViewController.m */; };
 		B3D13C8217DD2533004B7DCC /* ExtraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3D13C8017DD2533004B7DCC /* ExtraViewController.xib */; };
 /* End PBXBuildFile section */
@@ -170,6 +176,10 @@
 		B3C7C0AA17F4B4C000B76BF2 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = "../Google Analytics Library/GAILogger.h"; sourceTree = "<group>"; };
 		B3C7C0AB17F4B4C000B76BF2 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = "../Google Analytics Library/GAITrackedViewController.h"; sourceTree = "<group>"; };
 		B3C7C0AC17F4B4C000B76BF2 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = "../Google Analytics Library/GAITracker.h"; sourceTree = "<group>"; };
+		B3CB6C461802D130002520C8 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		B3CB6C471802D130002520C8 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		B3CB6C481802D130002520C8 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
+		B3CB6C4C1802D19C002520C8 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = "Google Analytics Library/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; };
 		B3D13C7E17DD2533004B7DCC /* ExtraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraViewController.h; sourceTree = "<group>"; };
 		B3D13C7F17DD2533004B7DCC /* ExtraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraViewController.m; sourceTree = "<group>"; };
 		B3D13C8017DD2533004B7DCC /* ExtraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExtraViewController.xib; sourceTree = "<group>"; };
@@ -180,6 +190,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CB6C4D1802D19C002520C8 /* libGoogleAnalyticsServices.a in Frameworks */,
+				B3CB6C491802D130002520C8 /* libz.1.1.3.dylib in Frameworks */,
+				B3CB6C4A1802D130002520C8 /* libz.1.2.5.dylib in Frameworks */,
+				B3CB6C4B1802D130002520C8 /* libz.1.dylib in Frameworks */,
+				B3CB6C451802D12F002520C8 /* libz.dylib in Frameworks */,
+				B3CB6C431802D0FC002520C8 /* libGoogleAnalytics_debug.a in Frameworks */,
 				B3C7C09A17F4B1E300B76BF2 /* SystemConfiguration.framework in Frameworks */,
 				B3C7C09817F4B1D600B76BF2 /* CoreData.framework in Frameworks */,
 				5067989314BF2E30006A2E4E /* MessageUI.framework in Frameworks */,
@@ -252,6 +268,10 @@
 		5015EFDA14870B2A00FC491D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B3CB6C4C1802D19C002520C8 /* libGoogleAnalyticsServices.a */,
+				B3CB6C461802D130002520C8 /* libz.1.1.3.dylib */,
+				B3CB6C471802D130002520C8 /* libz.1.2.5.dylib */,
+				B3CB6C481802D130002520C8 /* libz.1.dylib */,
 				B3C7C0A317F4B3BE00B76BF2 /* libGoogleAnalytics_debug.a */,
 				B3C7C09F17F4B30400B76BF2 /* libGoogleAnalyticsServices.a */,
 				B3C7C09D17F4B2CF00B76BF2 /* libGoogleAnalytics_debug.a */,
@@ -277,15 +297,15 @@
 				B3C7C0AB17F4B4C000B76BF2 /* GAITrackedViewController.h */,
 				B3C7C0AC17F4B4C000B76BF2 /* GAITracker.h */,
 				503EDBC11576AA7000CD3DE1 /* InfinityCalc.entitlements */,
-				B3D13C7E17DD2533004B7DCC /* ExtraViewController.h */,
 				B3D13C7F17DD2533004B7DCC /* ExtraViewController.m */,
 				B3D13C8017DD2533004B7DCC /* ExtraViewController.xib */,
 				5015EFEA14870B2A00FC491D /* AppDelegate.h */,
 				5015EFEB14870B2A00FC491D /* AppDelegate.m */,
-				5015EFED14870B2A00FC491D /* MainStoryboard.storyboard */,
+				B3D13C7E17DD2533004B7DCC /* ExtraViewController.h */,
 				B34AA8E617E64E0C000BDB21 /* MoreViewController.h */,
 				B34AA8E717E64E0C000BDB21 /* MoreViewController.m */,
 				50E9DF84149E815600DD53FF /* iPhoneViewController.storyboard */,
+				5015EFED14870B2A00FC491D /* MainStoryboard.storyboard */,
 				5020CE7314E1D11600E884D1 /* DetailViewController.xib */,
 				50A2B78A14E2293F0009A264 /* AboutViewController.xib */,
 				5099023214E71BE100F76B38 /* FunctionsViewController.xib */,
@@ -628,12 +648,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/../../../../Downloads/TestFlightSDK1.0\\\"",
-					"\\\"$(SRCROOT)/InfinityCalc/TestFlightSDK1.0\\\"",
+					"\\\\\\\"$(SRCROOT)/../../../../Downloads/TestFlightSDK1.0\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/InfinityCalc/TestFlightSDK1.0\\\\\\\"",
 					/Users/Connor/Documents/Programming/svn/IOS/InfinityCalc/GoogleAnalytics/Library,
 					/Users/Connor/Downloads/GoogleAnalyticsServicesiOS_3.01,
 					"/Users/Connor/Documents/Programming/svn/IOS/InfinityCalc/Google\\ Analytics\\ Library",
 					"/Users/Connor/Downloads/GoogleAnalyticsServicesiOS_3-1.01",
+					"/Users/Connor/Documents/Programming/InfinityCalc/Google\\ Analytics\\ Library",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "AD11D172-4E31-4F00-9096-EB65D9333B5A";
@@ -659,12 +680,13 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\\\"$(SRCROOT)/../../../../Downloads/TestFlightSDK1.0\\\"",
-					"\\\"$(SRCROOT)/InfinityCalc/TestFlightSDK1.0\\\"",
+					"\\\\\\\"$(SRCROOT)/../../../../Downloads/TestFlightSDK1.0\\\\\\\"",
+					"\\\\\\\"$(SRCROOT)/InfinityCalc/TestFlightSDK1.0\\\\\\\"",
 					/Users/Connor/Documents/Programming/svn/IOS/InfinityCalc/GoogleAnalytics/Library,
 					/Users/Connor/Downloads/GoogleAnalyticsServicesiOS_3.01,
 					"/Users/Connor/Documents/Programming/svn/IOS/InfinityCalc/Google\\ Analytics\\ Library",
 					"/Users/Connor/Downloads/GoogleAnalyticsServicesiOS_3-1.01",
+					"/Users/Connor/Documents/Programming/InfinityCalc/Google\\ Analytics\\ Library",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "AD11D172-4E31-4F00-9096-EB65D9333B5A";

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
     <dependencies>
         <deployment defaultVersion="1792" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -481,7 +481,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="g9a-QY-fFH" kind="modal" modalTransitionStyle="coverVertical" id="NAZ-rM-BSS"/>
+                                    <segue destination="aHs-0Q-15Z" kind="modal" id="h9j-yx-L4x"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wLa-ps-xvj" colorLabel="IBBuiltInLabel-Red">
@@ -629,19 +629,19 @@
             <point key="canvasLocation" x="-169" y="-321"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="bss-aA-Y06">
+        <scene sceneID="ilw-bx-vJP">
             <objects>
-                <navigationController definesPresentationContext="YES" id="g9a-QY-fFH" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z6S-Sc-YnY">
+                <navigationController definesPresentationContext="YES" id="aHs-0Q-15Z" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XZQ-eA-a8I">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="lMk-N1-pON" kind="relationship" relationship="rootViewController" id="ivr-TJ-6RE"/>
+                        <segue destination="lMk-N1-pON" kind="relationship" relationship="rootViewController" id="kaI-Oi-wd9"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vNz-Jd-r35" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agc-4G-p7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="-303"/>
+            <point key="canvasLocation" x="686" y="-203"/>
         </scene>
         <!--More View Controller-->
         <scene sceneID="e8u-PV-9KQ">

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CalcEngine.h"
+#import "AppDelegate.h"
 
 @implementation ViewController
 
@@ -24,7 +25,7 @@
 
 -(void)go{
     
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
@@ -221,6 +222,11 @@ int screenHeight = 0;
             Memory.frame = CGRectMake(88,438,68,21);
             degRadLabel.frame = CGRectMake(15, 438, 36, 21);
             Info.frame = CGRectMake(10,390,69,40);
+            operationView.frame = CGRectMake(10, 16, 118.5, 36);
+            percent.frame = CGRectMake(1000,390,69,40);
+            sin.frame = CGRectMake(8700,438,69,40);
+            cos.frame = CGRectMake(16400,438,69,40);
+            tan.frame = CGRectMake(24100,438,69,40);
         }
              
         
@@ -279,7 +285,7 @@ int screenHeight = 0;
             cos.frame = CGRectMake(112.366666667,96,70,36);
             
             percent.frame = CGRectMake(17.7,54,70,36);
-            operationView.frame = CGRectMake(123, 15, 113, 36);
+            operationView.frame = CGRectMake(123, 22, 113, 36);
             degRadLabel.frame = CGRectMake(17.7, 35, 36, 21);
             iPhone5TextView.frame = CGRectMake(480, 10, 88, 300);
         }else{
@@ -318,7 +324,7 @@ int screenHeight = 0;
             Pi.frame = CGRectMake(88,222,70,36);
             
             Memory.frame = CGRectMake(10, 10, 104, 33);
-            memoryDisplay.frame = CGRectMake(10, 30, 75, 21);
+            memoryDisplay.frame = CGRectMake(95.7, 10, 75, 21);
             display.frame = CGRectMake(236, 25, 234, 36);
             
             sin.frame = CGRectMake(88,54,70,36);
@@ -326,8 +332,8 @@ int screenHeight = 0;
             cos.frame = CGRectMake(88,96,70,36);
             
             percent.frame = CGRectMake(10,54,70,36);
-            operationView.frame = CGRectMake(123, 15, 113, 36);
-            degRadLabel.frame = CGRectMake(88, 30, 36, 21);
+            operationView.frame = CGRectMake(123, 25, 113, 36);
+            degRadLabel.frame = CGRectMake(10, 35, 36, 21);
             iPhone5TextView.frame = CGRectMake(480, 10, 88, 300);
         }
 
@@ -583,9 +589,11 @@ int screenHeight = 0;
 
 -(IBAction)info{
     
-     AppDelegate *delegate = [[UIApplication sharedApplication]delegate];
     MoreViewController *more = [[MoreViewController alloc]init];
-    [self presentViewController:more animated:YES completion:nil];
+    UINavigationController *controller = [[UINavigationController alloc]initWithRootViewController:more];
+    
+    [self presentViewController:controller animated:YES completion:nil];
+    NSLog(@"More");
     /*MoreTableViewController *theTableView = [[MoreTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
     
     delegate.theNavigationController = [[UINavigationController alloc]initWithRootViewController:theTableView];
@@ -936,15 +944,6 @@ int screenHeight = 0;
         ggDecimalInt2 = 15;
     }
     
-    if ([defaults boolForKey:@"stopwatch"]) {
-        
-    }else {
-        [defaults setBool:YES forKey:@"stopwatch"];
-        UIAlertView *daAlert = [[UIAlertView alloc] initWithTitle:@"Check out our new app!" message:@"We have just released our new app, eyeFree Sports Stopwatch. It is a unique in that it allows user to control the stopwatch with the volume buttons. It also has history and exporting options. Be sure to check it out in the app store!" delegate:self cancelButtonTitle:@"Done"
-                                                otherButtonTitles:@"Go to app store", nil];
-        
-        [daAlert show];
-    }
         
     if (ggDecimalInt2==0){
         ggDecimalInt2 = 15;
@@ -978,6 +977,7 @@ int screenHeight = 0;
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.screenName = @"Calculator Screen";
 }
 
 - (void)alertView:(UIAlertView *)theAlert clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -1020,6 +1020,7 @@ int screenHeight = 0;
             memoryDisplay.textColor = [UIColor blackColor];
             Memory.textColor = [UIColor blackColor];
             display.backgroundColor = [UIColor whiteColor];
+            display.textColor = [UIColor blackColor];
             operationView.backgroundColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor blackColor];
             degRadLabel.backgroundColor = [UIColor whiteColor];

@@ -23,7 +23,7 @@ BOOL functionMoreThanOnce;
 
 @class DetailViewController;
 
-@interface ViewController : UIViewController
+@interface ViewController : GAITrackedViewController
 <UIPopoverControllerDelegate>{
     
     int *equalsLast;

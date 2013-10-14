@@ -13,7 +13,8 @@
 #import "ViewController.h"
 #import "iPhoneViewController.h"
 #import <MessageUI/MessageUI.h>
-@interface MoreViewController : UIViewController <MFMailComposeViewControllerDelegate>{
+#import "GAI.h"
+@interface MoreViewController : GAITrackedViewController <MFMailComposeViewControllerDelegate>{
     
     
     UIStepper *theStepper;

@@ -21,8 +21,9 @@
 
 - (void)viewDidLoad
 {
-   
+    
     [super viewDidLoad];
+    self.screenName = @"More Screen";
     self.navigationItem.title = @"More";
     UIBarButtonItem *left = [[UIBarButtonItem alloc]initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(done)];
     [self.navigationItem setLeftBarButtonItem:left];
