@@ -65,6 +65,8 @@
 		B378D71F17348F4300485DE2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71E17348F4300485DE2 /* Icon.png */; };
 		B378D7211735309C00485DE2 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D7201735309C00485DE2 /* Icon-72@2x.png */; };
 		B378D723173530A300485DE2 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D722173530A300485DE2 /* Icon-72.png */; };
+		B3B279DB181B4E6700F816C4 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B279DA181B4E6700F816C4 /* CustomCell.m */; };
+		B3B279DE181B4E9300F816C4 /* MoreTableControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B279DD181B4E9300F816C4 /* MoreTableControllerViewController.m */; };
 		B3C7C09817F4B1D600B76BF2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C09717F4B1D600B76BF2 /* CoreData.framework */; };
 		B3C7C09A17F4B1E300B76BF2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C7C09917F4B1E300B76BF2 /* SystemConfiguration.framework */; };
 		B3C7C0A217F4B39300B76BF2 /* Google Analytics Library in Resources */ = {isa = PBXBuildFile; fileRef = B3C7C0A117F4B39300B76BF2 /* Google Analytics Library */; };
@@ -163,6 +165,10 @@
 		B378D71E17348F4300485DE2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B378D7201735309C00485DE2 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		B378D722173530A300485DE2 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		B3B279D9181B4E6700F816C4 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		B3B279DA181B4E6700F816C4 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		B3B279DC181B4E9300F816C4 /* MoreTableControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTableControllerViewController.h; sourceTree = "<group>"; };
+		B3B279DD181B4E9300F816C4 /* MoreTableControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTableControllerViewController.m; sourceTree = "<group>"; };
 		B3C7C09717F4B1D600B76BF2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B3C7C09917F4B1E300B76BF2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B3C7C09B17F4B1FB00B76BF2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -306,6 +312,10 @@
 				B34AA8E717E64E0C000BDB21 /* MoreViewController.m */,
 				50E9DF84149E815600DD53FF /* iPhoneViewController.storyboard */,
 				5015EFED14870B2A00FC491D /* MainStoryboard.storyboard */,
+				B3B279D9181B4E6700F816C4 /* CustomCell.h */,
+				B3B279DA181B4E6700F816C4 /* CustomCell.m */,
+				B3B279DC181B4E9300F816C4 /* MoreTableControllerViewController.h */,
+				B3B279DD181B4E9300F816C4 /* MoreTableControllerViewController.m */,
 				5020CE7314E1D11600E884D1 /* DetailViewController.xib */,
 				50A2B78A14E2293F0009A264 /* AboutViewController.xib */,
 				5099023214E71BE100F76B38 /* FunctionsViewController.xib */,
@@ -526,7 +536,9 @@
 				5015EFEC14870B2A00FC491D /* AppDelegate.m in Sources */,
 				5015EFF214870B2A00FC491D /* ViewController.m in Sources */,
 				5015F01214870BEB00FC491D /* CalcEngine.m in Sources */,
+				B3B279DB181B4E6700F816C4 /* CustomCell.m in Sources */,
 				5020CE7014E1CBCE00E884D1 /* MoreTableViewController.m in Sources */,
+				B3B279DE181B4E9300F816C4 /* MoreTableControllerViewController.m in Sources */,
 				5020CE7414E1D11600E884D1 /* DetailViewController.m in Sources */,
 				50A2B78B14E2293F0009A264 /* AboutViewController.m in Sources */,
 				B34AA8E817E64E0C000BDB21 /* MoreViewController.m in Sources */,
