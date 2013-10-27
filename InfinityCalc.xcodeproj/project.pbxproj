@@ -61,6 +61,8 @@
 		B32A70B917FC4F7200FA7E31 /* GoogleAnalyticsServicesiOS_3.01 (1).zip in Resources */ = {isa = PBXBuildFile; fileRef = B32A70B817FC4F7200FA7E31 /* GoogleAnalyticsServicesiOS_3.01 (1).zip */; };
 		B32C14F51800925700CAC407 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32C14F41800925700CAC407 /* Images.xcassets */; };
 		B34AA8E817E64E0C000BDB21 /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B34AA8E717E64E0C000BDB21 /* MoreViewController.m */; };
+		B351F1C4181C847500433FA3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B351F1C3181C847500433FA3 /* Social.framework */; };
+		B351F1C6181C849200433FA3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B351F1C5181C849200433FA3 /* Accounts.framework */; };
 		B378D71D17348F3100485DE2 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71C17348F3100485DE2 /* Icon@2x.png */; };
 		B378D71F17348F4300485DE2 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D71E17348F4300485DE2 /* Icon.png */; };
 		B378D7211735309C00485DE2 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B378D7201735309C00485DE2 /* Icon-72@2x.png */; };
@@ -161,6 +163,8 @@
 		B32C14F41800925700CAC407 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B34AA8E617E64E0C000BDB21 /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
 		B34AA8E717E64E0C000BDB21 /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		B351F1C3181C847500433FA3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B351F1C5181C849200433FA3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		B378D71C17348F3100485DE2 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		B378D71E17348F4300485DE2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		B378D7201735309C00485DE2 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B351F1C6181C849200433FA3 /* Accounts.framework in Frameworks */,
+				B351F1C4181C847500433FA3 /* Social.framework in Frameworks */,
 				B3CB6C4D1802D19C002520C8 /* libGoogleAnalyticsServices.a in Frameworks */,
 				B3CB6C491802D130002520C8 /* libz.1.1.3.dylib in Frameworks */,
 				B3CB6C4A1802D130002520C8 /* libz.1.2.5.dylib in Frameworks */,
@@ -274,6 +280,8 @@
 		5015EFDA14870B2A00FC491D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B351F1C5181C849200433FA3 /* Accounts.framework */,
+				B351F1C3181C847500433FA3 /* Social.framework */,
 				B3CB6C4C1802D19C002520C8 /* libGoogleAnalyticsServices.a */,
 				B3CB6C461802D130002520C8 /* libz.1.1.3.dylib */,
 				B3CB6C471802D130002520C8 /* libz.1.2.5.dylib */,
@@ -391,6 +399,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5015F00A14870B2A00FC491D /* Build configuration list for PBXNativeTarget "InfinityCalc" */;
 			buildPhases = (
+				B31C40A6181C3EF5002FBBCD /* ShellScript */,
 				5015EFD314870B2A00FC491D /* Sources */,
 				5015EFD414870B2A00FC491D /* Frameworks */,
 				5015EFD514870B2A00FC491D /* Resources */,
@@ -525,6 +534,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		B31C40A6181C3EF5002FBBCD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$((0x$buildNumber))\nbuildNumber=$(($buildNumber + 1))\nbuildNumber=$(printf \"%04d\" $buildNumber)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -651,8 +673,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = InfinityCalc/InfinityCalc.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ann E Greenwald (CLE34H9S2K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ann E Greenwald (CLE34H9S2K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InfinityCalc/InfinityCalc-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;
@@ -683,8 +705,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = InfinityCalc/InfinityCalc.entitlements;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ann E Greenwald (CLE34H9S2K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ann E Greenwald (CLE34H9S2K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InfinityCalc/InfinityCalc-Prefix.pch";
 				GCC_THUMB_SUPPORT = NO;

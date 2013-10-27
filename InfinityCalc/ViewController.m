@@ -1034,6 +1034,8 @@ int screenHeight = 0;
             operationView.textColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor whiteColor];
             degRadLabel.backgroundColor = [UIColor blackColor];
+            [[UIApplication sharedApplication]
+            setStatusBarStyle:UIStatusBarStyleLightContent];
         }else if ([theTempString isEqual:@"Red"]){
             self.view.backgroundColor = [UIColor redColor];
             memoryDisplay.textColor = [UIColor whiteColor];
@@ -1089,6 +1091,8 @@ int screenHeight = 0;
             operationView.textColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor whiteColor];
             degRadLabel.backgroundColor = [UIColor blackColor];
+            [[UIApplication sharedApplication]
+            setStatusBarStyle:UIStatusBarStyleLightContent];
         }else if ([theTempString isEqual:@"Red"]){
             self.view.backgroundColor = [UIColor redColor];
             memoryDisplay.textColor = [UIColor whiteColor];
@@ -1122,23 +1126,27 @@ int screenHeight = 0;
         }
         
     }else{
+        NSLog(@"iPhone");
         if ([theTempString isEqual:@"White"]) {
             self.view.backgroundColor = [UIColor whiteColor];
             memoryDisplay.textColor = [UIColor blackColor];
+            Memory.textColor = [UIColor blackColor];
             display.backgroundColor = [UIColor whiteColor];
+            display.textColor = [UIColor blackColor];
             operationView.backgroundColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor blackColor];
             degRadLabel.backgroundColor = [UIColor whiteColor];
+
         }else if ([theTempString isEqual:@"Black"]){
             self.view.backgroundColor = [UIColor blackColor];
             memoryDisplay.textColor = [UIColor whiteColor];
             Memory.textColor = [UIColor whiteColor];
+            display.backgroundColor = [UIColor blackColor];
             display.textColor = [UIColor whiteColor];
             operationView.backgroundColor = [UIColor blackColor];
             operationView.textColor = [UIColor whiteColor];
             degRadLabel.textColor = [UIColor whiteColor];
             degRadLabel.backgroundColor = [UIColor blackColor];
-
         }else if ([theTempString isEqual:@"Red"]){
             self.view.backgroundColor = [UIColor redColor];
             memoryDisplay.textColor = [UIColor whiteColor];
@@ -1217,6 +1225,16 @@ int screenHeight = 0;
     }
     
     [super viewWillAppear:animated];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    if ([theTempString isEqual:@"White"]) {
+        return UIStatusBarStyleDefault;
+    }else if ([theTempString isEqual:@"Black"]){
+        return UIStatusBarStyleLightContent;
+
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated

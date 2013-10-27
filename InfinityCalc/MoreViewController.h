@@ -14,6 +14,9 @@
 #import "iPhoneViewController.h"
 #import <MessageUI/MessageUI.h>
 #import "GAI.h"
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
+#import <MessageUI/MessageUI.h>
 @interface MoreViewController : GAITrackedViewController <MFMailComposeViewControllerDelegate>{
     
     
@@ -32,6 +35,8 @@
     UISegmentedControl *nightModeiPad;
     UISegmentedControl *degRad;
     UISegmentedControl *degRadiPad;
+    SLComposeViewController *mySLComposerSheet;
+    SLComposeViewController *mySLComposerSheetTwitter;
 }
 
 -(IBAction)valueChanged:(UIStepper *)sender;
@@ -49,7 +54,7 @@
 -(IBAction)Facebook:(id)sender;
 -(IBAction)email:(id)sender;
 
-
+@property (nonatomic, retain) IBOutlet UITableView *moreTableView;
 @property (nonatomic, retain) IBOutlet UIStepper *theStepper;
 @property (nonatomic, retain) IBOutlet UILabel *theLabel;
 @property (nonatomic, retain) IBOutlet UISwitch *theSwitch;

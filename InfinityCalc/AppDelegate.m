@@ -10,6 +10,7 @@
 #import "GAI.h"
 
 
+
 @implementation AppDelegate
 
 @synthesize window = _window, theNavigationController;
@@ -29,7 +30,7 @@
     
     // Initialize tracker.
     id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-37994981-1"];
-    
+
     
     
     [application setStatusBarStyle:UIStatusBarStyleBlackOpaque];
