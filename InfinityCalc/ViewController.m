@@ -948,7 +948,7 @@ int screenHeight = 0;
     if (ggDecimalInt2==0){
         ggDecimalInt2 = 15;
         ggdegrees = NO;
-        UIAlertView *theAlert = [[UIAlertView alloc] initWithTitle:@"Welcome to InfinityCalc!" message:@"Thank you for choosing InfinityCalc! Reminder: By default, Infinity Calc rounds all answers to fifteen decimels. If you would like to change this, please go to the More Menu, located in the bottom left-hand corner, settings, and then change the setting. Thanks!" delegate:nil cancelButtonTitle:@"Done"
+        UIAlertView *theAlert = [[UIAlertView alloc] initWithTitle:@"Welcome to InfinityCalc!" message:@"Thank you for choosing InfinityCalc! Reminder: By default, Infinity Calc rounds all answers to fifteen decimals. If you would like to change this, please go to the More Menu, located in the bottom left-hand corner. Thanks!" delegate:nil cancelButtonTitle:@"Done"
                                                  otherButtonTitles:nil];
         
         [theAlert show];
@@ -1022,6 +1022,7 @@ int screenHeight = 0;
             display.backgroundColor = [UIColor whiteColor];
             display.textColor = [UIColor blackColor];
             operationView.backgroundColor = [UIColor whiteColor];
+            operationView.textColor = [UIColor blackColor];
             degRadLabel.textColor = [UIColor blackColor];
             degRadLabel.backgroundColor = [UIColor whiteColor];
         }else if ([theTempString isEqual:@"Black"]){
@@ -1079,6 +1080,7 @@ int screenHeight = 0;
             display.backgroundColor = [UIColor whiteColor];
             display.textColor = [UIColor blackColor];
             operationView.backgroundColor = [UIColor whiteColor];
+            operationView.textColor = [UIColor blackColor];
             degRadLabel.textColor = [UIColor blackColor];
             degRadLabel.backgroundColor = [UIColor whiteColor];
         }else if ([theTempString isEqual:@"Black"]){
@@ -1134,6 +1136,7 @@ int screenHeight = 0;
             display.backgroundColor = [UIColor whiteColor];
             display.textColor = [UIColor blackColor];
             operationView.backgroundColor = [UIColor whiteColor];
+            operationView.textColor = [UIColor blackColor];
             degRadLabel.textColor = [UIColor blackColor];
             degRadLabel.backgroundColor = [UIColor whiteColor];
 

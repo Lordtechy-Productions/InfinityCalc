@@ -700,7 +700,7 @@
         
         mail.mailComposeDelegate = self;
         
-        [mail setSubject:@"eyeFree Sports Stopwatch Feedback"];
+        [mail setSubject:@"InfinityCalc Feedback"];
         
         [mail setMessageBody:[NSString stringWithFormat:@"Version: %@\niOS Version: %@\n Device: %@\n--------------------------\nLordtechy Support,\n", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"], [[UIDevice currentDevice] systemVersion], [UIDevice currentDevice].model] isHTML:NO];
         
